@@ -1,0 +1,45 @@
+<div id="issues-container">
+  <div id="filter-issue-containet">
+    <h1>Filter-Issues</h1>
+      <form action="/" method="get" id="filter-issue-form">
+         <label for="labels">Search by Label</label><br>
+              <% for( let label of project.labels) { %>
+                <ul>
+                  <li>
+                    <input name="labels" type="checkbox" value="<%= label %>" id="<%= label %>"/>
+                    <label for="<%= label %>"> <%= label %> </label><br />
+                  </li>
+                </ul>
+                 
+              <% } %>             
+                  <label for="author">Author</label>&nbsp;
+                  <input name="author" type="radio" checked="checked" value="" id="null"/>
+                  <label for="null">None</label><br />
+
+                  <% for( let issue of project.issues ) { %>
+                    <input name="author" type="radio" value="<%= issue.author %>" id="<%= issue.author %>"/>
+                    <label  for="<%= issue.author %>"><%= issue.author %></label><br />
+                  <% } %>
+                <button type="submit">Filter-Issues </button>  
+        </form>
+  </div>
+  
+<!-- for searching issues -->
+  <div id="search-issue-container">
+     <h1>Search-Issues</h1>
+        <form action="/" method="get" id="search-issue-form">
+            <label for="tie">Title</label>
+            <input type="text" name="tie" placeholder="Search by title.."/>
+            <label for="des">Description</label>
+            <input type="text" name="des" placeholder="Search by description..."/>
+            <button type="submit"> See-Issues </button>
+        </form>
+  </div>
+</div>
+
+<div id="issues-list">
+
+</div>
+
+<div id="issue-data" data="<%=JSON.stringify(project.issues)%>"></div>  
+

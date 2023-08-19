@@ -1,0 +1,17 @@
+
+<% for( let project of projects ) { %>
+    <div id="project-info-container">
+        <h1 id="project-heading">             
+            <strong> Name of the project : </strong><%= project.name %>
+        </h1>
+        <h3 id="project-author">
+            <strong> Author : </strong> <%= project.author %>
+        </h3> 
+        <p id="project-description">
+            <strong> Description : </strong><%= project.description %>
+        </p>               
+            <a href="/project/project-data/<%=project._id%>"> Open-project </a>  
+        </div>           
+<% } %>
+
+ 

@@ -1,0 +1,46 @@
+<div id="issue-form-container">
+  <h1>Create An Issue</h1>
+    <form action="/project/<%= project._id %>" method="POST">
+         <div>
+             <label for="title">Title:</label><br>
+             <input type="text" name="title" placeholder="Title" required/>
+         </div>
+      <br>
+          <div>
+              <label for="description" >Description</label><br>           
+              <textarea name="description" placeholder="Describe your issue..." required></textarea>
+          </div>
+      <br>    
+          <div>
+            <% if (project.labels.length>0) { %>
+              <div class="dropdown">
+                <button type="button">
+                  Labels
+                </button>
+                <ul class="dropdown-menu">
+                  <% for( let label of project.labels) { %>
+                      <li>
+                        <a class="dropdown-item" href="#"><%= label %></a>
+                      </li>
+                  <% } %>
+                </ul>
+              </div>
+              <% } %>
+            <h2>Add Labels</h2>
+            <input name="labels" type="checkbox" value="Bug" id="bug"/>
+            <label for="bug"> Bug </label><br />
+            <input name="ui-improvement" type="checkbox" value="UI Improvement"/>
+            <label for="ui-improvement">UI Improvement </label><br/>
+            <input name="documentation" type="checkbox" value="Documentation"/>
+            <label for="documentation">Documentation </label><br />
+            <input name="enhancement" type="checkbox" value="Enhancement"/>
+            <label for="enhancement">Enhancement </label><br />
+            <input name="duplicate" type="checkbox" value="Duplicate"/>
+            <label  for="duplicate"> Duplicate </label><br><br>
+            <label for="author">Author</label>
+            <input type="text" name="author" placeholder="Author" required/>
+          </div>     
+       <button type="submit">Create-Issue</button>
+    </form>
+</div>
+    

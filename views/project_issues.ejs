@@ -1,0 +1,12 @@
+<% for( let issue of project.issues ) { %>
+    <ul>
+      <li>
+        <div id="all-issues">
+          <h4>Title : <%= issue.title %></h4>
+          <h5>Author : <%= issue.author %></h5>
+          <h6> Description : <%= issue.description %></h6>
+          Labels : <%= issue.labels %>
+        </div>
+      </li>
+    </ul>
+  <% } %>

@@ -1,0 +1,21 @@
+
+  
+  <div id="project-form-container">
+    <h2>Create a new project</h2>
+      <form action="/project/create" method="POST" id="project-form">   
+        <div>
+           <label for="namelabel"><h3>Name:</h3></label>
+           <input type="text" name="name" placeholder="Name of your project" required id="namelabel" />
+        </div>           
+        <div>
+           <label for="inputPassword3"><h3>Description:</h3></label>
+           <textarea name="description" placeholder="Write something about your project..." required id="inputPassword3"></textarea>
+        </div>
+        <div>
+           <label for="authorlabel"><h3>Author:</h3></label>
+           <input type="text" name="author" placeholder="Author" required id="authorlabel"/>
+        </div>
+        <button type="submit">Create-project</button>       
+     </form>
+  </div>
+

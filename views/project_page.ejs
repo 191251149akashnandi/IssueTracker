@@ -1,0 +1,14 @@
+    <div id="project-container">
+        <h1>
+            Project : <%= project.name %>
+        </h1>
+        <h3>
+            Author : <%= project.author %>
+        </h3>
+        <p>
+            Description : <%= project.description %>
+        </p>  
+
+        <a href="/project/show-issues/<%= project._id %>">See-Issues</a>
+
+</div><%- include('_issues'); %>

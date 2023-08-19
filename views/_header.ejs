@@ -1,0 +1,27 @@
+<div id="nav">
+      <% if(title === 'Issue-Tracker | Home') { %> 
+
+            <div class="header-btn">
+              <a href="/"><h2>Issue-Tracker</h2></a>
+            </div>
+            <div class="header-btn">
+              <a href="/project/projectio"><h2>Create-new-Project</h2></a>
+            </div>   
+
+     <% } else if(title === 'project | page') { %>
+            
+          <div class="header-btn">
+            <a href="/"><h2>Issue-Tracker</h2></a>
+          </div>
+          <div class="header-btn">
+            <a href="/project/issue-form/<%= project._id %>"><h2>Create-Issue</h2></a>
+          </div>
+
+      <% } else { %>
+
+        <div class="header-btn">
+          <a href="/"><h2>Issue-Tracker</h2></a>
+        </div>
+
+      <% } %>
+</div>
