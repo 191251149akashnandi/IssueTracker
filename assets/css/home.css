@@ -1,0 +1,44 @@
+/* this contains the styles for home page and its components like list of projects etc */
+#project-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    background-color: rgb(237, 214, 137);
+    margin: 0px auto;
+    box-shadow: 3px 3px 5px 3px black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#project-info-container #project-heading {
+    background: rgb(108, 72, 169);
+    color: white;
+    box-shadow: 5px 5px 8px black;
+}
+
+#project-info-container a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    background: green;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 8px;
+    margin-left: 25rem;
+}
+#project-info-container a:hover {
+    box-shadow: 3px 3px 5px 3px black;
+}
+
+#project-info-container #project-author {
+    background-color: rgb(106, 40, 4);
+    color: white;
+}
+
+#project-info-container #project-description {
+    background: white;
+    color: black;
+}

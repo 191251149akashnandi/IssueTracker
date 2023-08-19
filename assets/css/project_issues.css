@@ -1,0 +1,14 @@
+#all-issues {
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    box-shadow: 3px 3px 5px 3px black;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+ul li {
+    list-style-type: none;
+}

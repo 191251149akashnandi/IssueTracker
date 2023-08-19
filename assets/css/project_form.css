@@ -1,0 +1,48 @@
+#project-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#project-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 5px 2px black;
+    width: 50%;
+    margin-bottom: 3rem;
+    /* height: 50%; */
+    /* line-height: 12px; */
+}
+#project-form div input {
+    background: rgb(246, 243, 251);
+    box-shadow: 2px 2px 3px black;
+    width: 15rem;
+}
+
+#project-form div textarea {
+    background: rgb(240, 238, 245);
+    box-shadow: 2px 2px 3px black;
+    width: 15rem;
+    height: 6rem;
+}
+
+#project-form button {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px;
+    padding: 2px;
+    box-shadow: 2px 2px 3px 2px black;
+}
+
+/* #project-form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+} */

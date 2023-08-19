@@ -1,0 +1,47 @@
+/* this contains the styles for issues_form page */
+#issue-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    box-shadow: 2px 2px 5px 2px black;
+    width: 50%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+#issue-form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#issue-form-container form input[type="text"] {
+    background: rgb(246, 243, 251);
+    box-shadow: 2px 2px 3px black;
+    width: 15rem;
+}
+
+#issue-form-container form textarea {
+    background: rgb(240, 238, 245);
+    box-shadow: 2px 2px 3px black;
+    width: 15rem;
+    height: 6rem;
+}
+
+#issue-form-container form input[type="checkbox"] {
+    background: rgb(246, 243, 251);
+    box-shadow: 2px 2px 3px black;
+}
+
+#issue-form-container form button {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px;
+    padding: 2px;
+    box-shadow: 2px 2px 3px 2px black;
+}
+

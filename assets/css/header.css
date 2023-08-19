@@ -1,0 +1,17 @@
+/* this file contains the styles for header and its components */
+#nav {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 3.5rem;
+    background: rgb(27, 15, 102);
+    color: white;
+}
+
+#nav .header-btn a h2{
+   text-decoration: none;
+   color: white;
+   box-shadow: 3px 3px 4px 3px red;
+}

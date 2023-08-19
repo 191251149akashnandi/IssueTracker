@@ -1,0 +1,9 @@
+/* this file styles footer of project */
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: white;
+    background: rgb(27, 15, 102);
+    margin: 5px;
+}

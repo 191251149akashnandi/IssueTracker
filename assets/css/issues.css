@@ -1,0 +1,34 @@
+#issues-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 5px 8px 5px black;
+    width: 50%;
+    margin: 0px auto;
+    margin-bottom: 1rem;
+}
+#issues-container #filter-issue-containet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#issues-container #search-issue-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#issues-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px auto;
+    box-shadow: 5px 5px 8px 5px black;
+    width: 50%;
+    margin-bottom: 1rem;
+}
