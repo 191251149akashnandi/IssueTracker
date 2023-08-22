@@ -16,6 +16,6 @@ Issue 1. I have stucked at a point while setup my routes for redirecting in diff
 You should be first run the command -npm install -npm start
 
 
-Live website link - https://isuue-tracker-bazg.onrender.com
+Live website link - https://isuue-tracker-bazg.onrender.com 
 
 
